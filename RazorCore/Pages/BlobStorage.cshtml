@@ -1,0 +1,14 @@
+﻿@page
+@model RazorCore.Pages.BlobStorageModel
+@{
+    ViewData["Title"] = "BlobStorage";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>BlobStorage</h2>
+<ul>
+    @foreach (var item in Model.blobs)
+    {
+        <li>@item</li>
+    }
+</ul>
